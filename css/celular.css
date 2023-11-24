@@ -1,0 +1,131 @@
+.logo{
+    height:4em;
+}
+
+header{
+    height: 4em;
+    line-height:4em;
+text-align:center;
+color:white;
+box-sizing:border-box
+}
+
+nav{
+position:absolute;
+top: 0;
+left:0;
+width:100%;
+}
+
+
+#hamburguesa li {
+list-style:none;
+text-indent: -100px;
+overflow:hidden;
+margin-top: .75em;
+width:2.5em
+}
+
+#hamburguesa li a {
+background: url("../img/menu.png") no-repeat center center;
+background-size:cover;
+display:block;
+height: 2.5em;
+}
+
+#hamburguesa li:last-child{
+display:none;
+}
+
+nav:target #barra{
+left:0;
+}
+
+nav:target #hamburguesa li:first-child{
+display:none;
+}
+
+nav:target #hamburguesa li:last-child{
+display:block;
+}
+
+#barra{
+width:100%;
+height:calc(100vh - 4em);
+position:absolute;
+top: 4em;
+left:-100%;
+background:rgb(36, 103, 105);
+transition: left .5s ease;
+}
+
+#barra li {
+list-style:none;
+margin: 1em;
+width:90%;
+display:inline-block;
+}
+
+#barra li a{
+text-decoration: none;
+display:block;
+background:rgb(221, 195, 47);
+color:black;
+text-align:center;
+line-height: 2em;
+}
+
+
+footer{
+    background-color: rgb(39, 107, 107);
+    padding-bottom: 30%;
+}
+
+section{
+    margin:10% 0;
+}
+section:nth-child(2) h2, section:nth-child(3) h2{
+    margin:2em;
+    color:white;
+}
+
+
+section:nth-child(1)>div{
+    margin:2em;
+}
+
+section:nth-child(3){
+    display:flex;
+    flex-direction:column;
+    gap:5%;
+    
+}
+section:nth-child(3) > div>div{
+    display:flex;
+    flex-direction:column;
+    gap:3em;
+    margin:2em;
+    border-top:5px solid rgb(224, 140, 107)
+}
+
+img{
+    width:100%;
+}
+
+section:nth-child(5)>div{
+    margin: 1em 2em;
+}
+
+section:nth-child(6) >div>div{
+    margin: 1em 2em;
+    display:flex;
+    flex-direction:column;
+    gap:1em;
+}
+
+section:nth-child(6) h3{
+    color:rgb(43, 197, 29)
+}
+section:nth-child(6) h2{
+    margin-left:1.5em
+}

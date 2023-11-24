@@ -1,0 +1,173 @@
+#hamburguesa{
+    display:none;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 1% 2%;
+    background-color: rgb(224, 140, 107);
+
+  }
+
+nav {
+    margin-left: auto;
+    margin-right: 2%;
+  }
+
+ul{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #382b2b;
+    text-decoration: none;
+    margin: 0 30px;
+}
+
+nav ul li a:hover{
+    color:white;
+}
+
+
+h2{
+    margin:0 10%;
+}
+
+
+
+/*seccion 1*/
+
+section:nth-child(1){
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    margin:10%;
+}
+
+section:nth-child(1) h2{
+    font-weight: bold;
+    color:rgb(48, 88, 114);
+    margin:0;
+}
+
+section:nth-child(1)>div{
+    flex:50%;
+}
+
+section:nth-child(1)>div> img{
+    width:100%;
+    object-fit:cover;
+}
+
+section:nth-child(2) h2{
+    color:white;
+}
+/*seccion 3*/
+
+section:nth-child(3) h3{
+    font-size:2em;
+    color:rgb(43, 197, 29);
+}
+
+section:nth-child(3){
+    margin: 10% 0;
+}
+
+section:nth-child(3)>div{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 550px;
+    gap:1em;
+    text-align:center;
+    margin:0 10%;
+}
+
+section:nth-child(3) > div>div{
+    border: 2px solid rgb(224, 140, 107);
+    border-radius:4%;
+    padding:2%;
+    color:rgb(48, 36, 26)
+}
+
+section:nth-child(3)>div>div{
+    padding:4%
+}
+
+section:nth-child(3)>div>div>img{
+    border-radius: 50%;
+    text-align:center;
+    width:50%;
+    border: 2px solid rgb(224, 140, 107);
+}
+
+section:nth-child(3)>div> div:nth-child(10) {
+    grid-column-start:2 ;
+}
+
+
+section:nth-child(5){
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color:rgb(224, 140, 107);
+    border-radius:20px;
+    margin:10%;
+    align-items:center;
+    color:rgb(43, 42, 42);
+}
+
+section:nth-child(5) > div{
+    padding:10%;
+}
+
+section:nth-child(5)> figure > img{
+    width:100%;
+    object-fit:cover;
+}
+
+
+section:nth-child(6)>div{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    gap:2%;
+    margin: 8%
+
+}
+
+section:nth-child(6) h3{
+    color:rgb(43, 197, 29)
+}
+
+section:nth-child(6) >div>div, section:nth-child(6) >div> figure{
+    flex:50%;
+}
+
+
+section:nth-child(6)>div figure> img{
+    width:100%;
+    border-radius:50%;
+    border: 2px solid rgb(43, 197, 29);
+    object-fit:cover;
+}
+
+section:nth-child(6) > div>div{
+    display:flex;
+    flex-direction:column;
+    gap:1em;
+}
+
+section:nth-child(6) >div > div > div{
+    border: 2px solid rgb(43, 197, 29);
+    padding:2%;
+    border-radius:50px;
+
+}
+
+section:nth-child(6) h3, section:nth-child(6) p{
+    margin:2%
+
+}
